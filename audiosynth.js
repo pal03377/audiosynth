@@ -198,7 +198,7 @@ var Synth, AudioSynth, AudioSynthInstrument;
 	});
 	setPub('loadSoundProfile', function() {
 		for(var i=0,len=arguments.length;i<len;i++) {
-			o = arguments[i];
+			var o = arguments[i];
 			if(!(o instanceof Object)) { throw new Error('Invalid sound profile.'); }
 			this._sounds.push(o);
 		}
@@ -207,7 +207,7 @@ var Synth, AudioSynth, AudioSynthInstrument;
 	});
 	setPub('loadModulationFunction', function() {
 		for(var i=0,len=arguments.length;i<len;i++) {
-			f = arguments[i];
+			var f = arguments[i];
 			if(typeof(f)!='function') { throw new Error('Invalid modulation function.'); }
 			this._mod.push(f);
 		}
@@ -349,4 +349,4 @@ Synth.loadSoundProfile({
 	}
 });
 
-exports = { Synth, AudioSynth, AudioSynthInstrument };
+module.exports = { Synth, AudioSynth, AudioSynthInstrument };

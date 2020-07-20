@@ -1,0 +1,19 @@
+{
+  "name": "keithwhor-audiosynth-packaged",
+  "version": "1.0.4",
+  "description": "npm version for https://github.com/keithwhor/audiosynth",
+  "main": "audiosynth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pal03377/audiosynth.git"
+  },
+  "author": "https://github.com/keithwhor, packaged by https://github.com/pal03377",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pal03377/audiosynth/issues"
+  },
+  "homepage": "https://github.com/pal03377/audiosynth#readme"
+}

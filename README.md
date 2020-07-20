@@ -17,18 +17,24 @@ To see a demo of audiosynth in action, visit http://keithwhor.com/music/
 Installation
 ------------
 
-Assuming audiosynth.js is in your current directory, import package using:
+This is the npm package version, so install it via npm:
 
-```html
-<script src="audiosynth.js"></script>
-```
+`npm install -S keithwhor-audiosynth-packaged`
 
 
 Usage
 -----
 
-audiosynth implements a singleton class, ```AudioSynth```. By default, the global (window) variable ```Synth```
-is the instance of the class.
+audiosynth implements a singleton class, ```AudioSynth```. By default, the variable ```Synth```
+is the instance of the class. You can import it using
+
+`import { Synth } from "keithwhor-audiosynth-packaged";`
+
+...or by using `require`:
+
+`const { Synth } = require("keithwhor-audiosynth-packaged");`
+
+The module exports `Synth`, `AudioSynth`, and `AudioSynthInstrument`.
 
 Any attempt to instantiate new ```AudioSynth``` object will only create references to
 the original object.
