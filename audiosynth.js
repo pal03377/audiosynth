@@ -348,3 +348,5 @@ Synth.loadSoundProfile({
 		);
 	}
 });
+
+exports = { Synth, AudioSynth, AudioSynthInstrument };
